@@ -99,6 +99,59 @@
       <script type="text/javascript" src="js/html5shiv.js"></script>
       <script type="text/javascript" src="js/respond.min.js"></script>     
     <![endif]-->
+	
+	<!---css tooltip by Rugangu yvette-->
+	<style>
+		.tooltip {
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover {
+    color: #c00;
+    text-decoration: none;
+}
+
+.tooltip:hover:after {
+    background: #111;
+    background: rgba(0,0,0,.8);
+    border-radius: .5em;
+    bottom: 1.35em;
+    color: #fff;
+    content: attr(title);
+    display: block;
+    left: 1em;
+    padding: .3em 1em;
+    position: absolute;
+    text-shadow: 0 1px 0 #000;
+    white-space: nowrap;
+    z-index: 98;
+}
+
+.tooltip:hover:before {
+    border: solid;
+    border-color: #111 transparent;
+    border-color: rgba(0,0,0,.8) transparent;
+    border-width: .4em .4em 0 .4em;
+    bottom: 1em;
+    content: "";
+    display: block;
+    left: 2em;
+    position: absolute;
+    z-index: 99;
+}
+
+/* this part styles only a paragraph  */
+
+p {
+    color: #333;
+    font: normal .875em "Lucida Grande",Arial,sans-serif;
+    margin: 1em auto;
+    width: 75%;
+}
+		
+	</style>
+	<!---css tooltip ends here by Rugangu yvette-->
     
 </head>    
 
@@ -1453,7 +1506,10 @@
               <small class="subtitle">Light Color Background Top Menu</small> </div>              
           </div>
           <!-- vd_title-section -->
-          
+          <!----css toolTip start here by Rugangu Yvette------------->
+		<p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero.</p>
+<p>Vestibulum mollis mauris <a href="#" class="tooltip" title="Sample tooltip">pellentesque</a> enim.  euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris.</p>
+ <!----css toolTip Ends here by Rugangu Yvette------------->
           <div class="vd_content-section clearfix">
             <p>On the left side, that is where we need your contribution, choose what you can do from the left sidebar.</p>
             <pre class="prettyprint pd-20">

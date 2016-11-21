@@ -1,2 +1,8 @@
 # Doro_rainBow
-I need guys contribute on this projects, i need to create an admin control panel that will allow users to manage their website without touching on code.
+Guys i have found bug on line 45 in clearminal.html, i guess if we could use the following function
+
+function getTemplate(){
+$("#tab").click(function(){
+$(".right").hide();
+});
+}
